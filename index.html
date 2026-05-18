@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SSB PHARMACY</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="TemplatesJungle">
+  <meta name="keywords" content="SSB PHARMACY, Medical, Pharmacy, Healthcare, HTML, Website Template">
+  <meta name="description" content="SSB PHARMACY is a Medical Healthcare HTML Website Template">
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- script
+    ================================================== -->
+  <script src="js/modernizr.js"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol xmlns="http://www.w3.org/2000/svg" id="navbar-icon" viewBox="0 0 16 16">
+      <path
+        d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="location" viewBox="0 0 512 512">
+      <circle cx="256" cy="192" r="32" fill="currentColor" />
+      <path fill="currentColor"
+        d="M256 32c-88.22 0-160 68.65-160 153c0 40.17 18.31 93.59 54.42 158.78c29 52.34 62.55 99.67 80 123.22a31.75 31.75 0 0 0 51.22 0c17.42-23.55 51-70.88 80-123.22C397.69 278.61 416 225.19 416 185c0-84.35-71.78-153-160-153Zm0 224a64 64 0 1 1 64-64a64.07 64.07 0 0 1-64 64Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="phone" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M5 9.86a18.466 18.466 0 0 0 9.566 9.292l.68.303a3.5 3.5 0 0 0 4.33-1.247l.889-1.324a1 1 0 0 0-.203-1.335l-3.012-2.43a1 1 0 0 0-1.431.183l-.932 1.257a12.14 12.14 0 0 1-5.51-5.511l1.256-.932a1 1 0 0 0 .183-1.431l-2.43-3.012a1 1 0 0 0-1.335-.203l-1.333.894a3.5 3.5 0 0 0-1.237 4.355L5 9.86Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="email" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5l-8-5V6l8 5l8-5v2z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="home-thermometer" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M19 8a2 2 0 0 1 2 2v6.76c.61.55 1 1.35 1 2.24c0 1.66-1.34 3-3 3s-3-1.34-3-3c0-.89.39-1.69 1-2.24V10c0-1.1.9-2 2-2m0 1c-.55 0-1 .45-1 1v1h2v-1c0-.55-.45-1-1-1M5 20v-8H2l10-9l4.4 3.96A3.97 3.97 0 0 0 15 10v6c-.63.83-1 1.87-1 3l.1 1H5Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="pregnant-woman" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M10 22v-5H8v-7q0-1.25.875-2.125T11 7q1.25 0 2.125.875T14 10q.9.375 1.45 1.2T16 13v4h-3v5h-3Zm1-16q-.825 0-1.413-.588T9 4q0-.825.588-1.413T11 2q.825 0 1.413.588T13 4q0 .825-.588 1.413T11 6Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="nutrition" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M22 18a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4v-2h12v2M4 3h10a2 2 0 0 1 2 2v9H8v5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m0 3v2h2V6H4m10 2V6H8v2h6M4 10v2h2v-2H4m4 0v2h6v-2H8m-4 4v2h2v-2H4Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="local-pharmacy" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M3 21v-2l2-6l-2-6V5h12.7l1.45-4l2.35.85L18.35 5H21v2l-2 6l2 6v2H3Zm8-4h2v-3h3v-2h-3V9h-2v3H8v2h3v3Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="calendar" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M8 14q-.425 0-.713-.288T7 13q0-.425.288-.713T8 12q.425 0 .713.288T9 13q0 .425-.288.713T8 14Zm4 0q-.425 0-.713-.288T11 13q0-.425.288-.713T12 12q.425 0 .713.288T13 13q0 .425-.288.713T12 14Zm4 0q-.425 0-.713-.288T15 13q0-.425.288-.713T16 12q.425 0 .713.288T17 13q0 .425-.288.713T16 14ZM5 22q-.825 0-1.413-.588T3 20V6q0-.825.588-1.413T5 4h1V2h2v2h8V2h2v2h1q.825 0 1.413.588T21 6v14q0 .825-.588 1.413T19 22H5Zm0-2h14V10H5v10Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="clock" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M12 20a8 8 0 0 0 8-8a8 8 0 0 0-8-8a8 8 0 0 0-8 8a8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10a10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67l-.75 1.23L11 13V7h1.5Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="quote-up" viewBox="0 0 24 24">
+      <path fill="currentColor" d="m10 7l-2 4h3v6H5v-6l2-4h3m8 0l-2 4h3v6h-6v-6l2-4h3Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="quote-down" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M14 17h3l2-4V7h-6v6h3M6 17h3l2-4V7H5v6h3l-2 4Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="facebook" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="youtube" viewBox="0 0 32 32">
+      <path fill="currentColor"
+        d="M29.41 9.26a3.5 3.5 0 0 0-2.47-2.47C24.76 6.2 16 6.2 16 6.2s-8.76 0-10.94.59a3.5 3.5 0 0 0-2.47 2.47A36.13 36.13 0 0 0 2 16a36.13 36.13 0 0 0 .59 6.74a3.5 3.5 0 0 0 2.47 2.47c2.18.59 10.94.59 10.94.59s8.76 0 10.94-.59a3.5 3.5 0 0 0 2.47-2.47A36.13 36.13 0 0 0 30 16a36.13 36.13 0 0 0-.59-6.74ZM13.2 20.2v-8.4l7.27 4.2Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="instagram" viewBox="0 0 256 256">
+      <path fill="currentColor"
+        d="M128 80a48 48 0 1 0 48 48a48.05 48.05 0 0 0-48-48Zm0 80a32 32 0 1 1 32-32a32 32 0 0 1-32 32Zm48-136H80a56.06 56.06 0 0 0-56 56v96a56.06 56.06 0 0 0 56 56h96a56.06 56.06 0 0 0 56-56V80a56.06 56.06 0 0 0-56-56Zm40 152a40 40 0 0 1-40 40H80a40 40 0 0 1-40-40V80a40 40 0 0 1 40-40h96a40 40 0 0 1 40 40ZM192 76a12 12 0 1 1-12-12a12 12 0 0 1 12 12Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="twitter" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="linkedin" viewBox="0 0 512 512">
+      <path fill="currentColor"
+        d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32Zm-273.3 373.43h-64.18V205.88h64.18ZM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43c0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43Zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44c-17.74 0-28.24 12-32.91 23.69c-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44c42.13 0 74 27.77 74 87.64Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="search" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0-14 0m18 11l-6-6" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="heart" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M12 12Zm0 9q-.45 0-.863-.163t-.737-.487l-6.7-6.725q-.875-.875-1.288-2T2 9.275Q2 6.7 3.675 4.85T7.85 3q1.2 0 2.263.475T12 4.8q.8-.85 1.863-1.325T16.125 3q2.5 0 4.188 1.85T22 9.25q0 1.225-.425 2.35t-1.275 2l-6.725 6.75q-.325.325-.725.488T12 21Zm1-13q.25 0 .475.125t.35.325l1.7 2.55h4.15q.175-.425.262-.863t.088-.887q-.05-1.725-1.15-2.963t-2.75-1.237q-.775 0-1.488.3t-1.237.875l-.675.725q-.125.15-.325.238t-.4.087q-.2 0-.4-.087t-.35-.238l-.675-.725q-.525-.575-1.225-.9T7.85 5Q6.2 5 5.1 6.263T4 9.25q0 .45.075.888t.25.862H9q.25 0 .475.125t.35.325l.875 1.3l1.35-4.05q.1-.3.362-.5T13 8Zm.3 3.25l-1.35 4.05q-.1.3-.375.5t-.6.2q-.25 0-.475-.125t-.35-.325L8.45 13H5.9l5.925 5.925q.05.05.088.063T12 19q.05 0 .088-.013t.087-.062l5.9-5.925H15q-.25 0-.475-.125t-.375-.325l-.85-1.3Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-down" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="plus" viewBox="0 0 16 16">
+      <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="minus" viewBox="0 0 16 16">
+      <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+    </symbol>
+  </svg>
+
+  <header id="header">
+    <nav class="header-top py-4">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-md-5 col-lg-4 d-flex justify-content-center justify-content-md-start">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+              <img src="images/ssb-pharmacy-logo.png" class="logo" style="max-height: 80px;">
+              <span class="ms-2 fw-bold fs-3" style="color: #2B4A21;">SS<span style="color: #B58B37;">B</span>
+                PHARMACY</span>
+            </a>
+          </div>
+          <div class="col-12 col-md-7 col-lg-8 mt-3 mt-md-0">
+            <ul
+              class="contact-list d-flex justify-content-center justify-content-md-end align-items-center flex-wrap list-unstyled m-0">
+              <li class="pe-md-4 pe-3 d-flex align-items-center text-dark fw-bold mb-2 mb-md-0 fs-6">
+                <svg class="location primary-color me-2 flex-shrink-0" width="24" height="24">
+                  <use xlink:href="#location"></use>
+                </svg>
+                <div class="text-start">21, Mahant Road <br> Laxman Chowk, Dehradun</div>
+              </li>
+              <li class="d-flex align-items-center text-dark fw-bold mb-2 mb-md-0 fs-6">
+                <svg class="phone primary-color me-2 flex-shrink-0" width="24" height="24">
+                  <use xlink:href="#phone"></use>
+                </svg>
+                <a href="tel:+917452020847" class="text-decoration-none text-dark">(+91) 7452020847</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav id="primary-header" nav class="navbar navbar-expand-lg shadow-none" aria-label="navbar" height="30">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-primary"
+          aria-controls="navbar-primary" aria-expanded="false" aria-label="Toggle navigation">
+          <svg class="navbar-icon mt-3 primary-color-500 bg-light" width="50" height="50">
+            <use xlink:href="#navbar-icon"></use>
+          </svg>
+        </button>
+        <div class="header-bottom collapse navbar-collapse bg-light border-radius-10 py-2" id="navbar-primary">
+          <ul class="navbar-nav w-100 justify-content-center mb-2 mb-lg-0">
+            <li class="nav-item ps-4 pe-4 border-right text-center">
+              <a class="nav-link text-dark active p-0 mt-3 mt-lg-0" aria-current="page" href="#intro">Home</a>
+            </li>
+            <li class="nav-item ps-4 pe-4 border-right text-center">
+              <a class="nav-link text-dark p-0" href="#our-services">Services</a>
+            </li>
+            <li class="nav-item ps-4 pe-4 border-right text-center">
+              <a class="nav-link text-dark p-0" href="#our-team">Team</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="intro" class="position-relative overflow-hidden padding-small pb-0">
+    <div class="banner position-relative">
+      <img src="images/banner-image.png" alt="banner" class="img-fluid w-100">
+      <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4 mb-md-5">
+        <button type="button" class="btn btn-medium btn-primary btn-pill text-uppercase shadow" data-bs-toggle="modal"
+          data-bs-target="#aboutUsModal">About us</button>
+      </div>
+    </div>
+
+    <!-- About Us Modal -->
+    <div class="modal fade" id="aboutUsModal" tabindex="-1" aria-labelledby="aboutUsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="aboutUsModalLabel">About SSB PHARMACY</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Welcome to SSB PHARMACY. We are dedicated to providing the highest quality medical care and
+              pharmaceutical services to our community. Our experienced team of professionals is here to support your
+              health journey with compassion and cutting-edge medicine.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-pill" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="our-services">
+    <div class="container">
+      <div class="row">
+
+        <div class="display-header mb-5 d-flex flex-wrap align-items-center justify-content-center">
+          <div class="col-md-6 col-sm-12 text-center">
+            <h2 class="display-5 fw-bold text-dark">Our Services</h2>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 pb-3">
+          <div class="icon-box p-4 bg-light border-radius-10 text-center shadow-sm h-100">
+            <div class="icon-box-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#BF963E"
+                class="bi bi-heart-pulse-fill mt-3 mb-2" viewBox="0 0 16 16">
+                <path
+                  d="M1.475 9C2.702 10.84 4.779 12.871 8 15c3.221-2.129 5.298-4.16 6.525-6H12a.5.5 0 0 1-.464-.314l-1.457-3.642-1.598 5.593a.5.5 0 0 1-.945.049L5.889 6.568l-1.473 2.21A.5.5 0 0 1 4 9zM.879 8C-2.426 1.68 4.41-2 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C11.59-2 18.426 1.68 15.12 8h-2.783l-1.874-4.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8z" />
+              </svg>
+            </div>
+            <div class="icon-box-content">
+              <h3 class="card-title py-2">General Healthcare</h3>
+              <p>Get trusted medicines, wellness essentials, and everyday healthcare solutions under one roof with
+                expert guidance you can rely on.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 pb-3">
+          <div class="icon-box p-4 bg-light border-radius-10 text-center shadow-sm h-100">
+            <div class="icon-box-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#BF963E"
+                class="bi bi-truck mt-3 mb-2" viewBox="0 0 16 16">
+                <path
+                  d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
+              </svg>
+            </div>
+            <div class="icon-box-content">
+              <h3 class="card-title py-2">Home Delivery</h3>
+              <p>Fast and convenient doorstep delivery of medicines and healthcare products to ensure care reaches you
+                when you need it most.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 pb-3">
+          <div class="icon-box p-4 bg-light border-radius-10 text-center shadow-sm h-100">
+            <div class="icon-box-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#BF963E"
+                class="bi bi-clipboard2-pulse mt-3 mb-2" viewBox="0 0 16 16">
+                <path
+                  d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5z" />
+                <path
+                  d="M3 2.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 0 0-1h-.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1H12a.5.5 0 0 0 0 1h.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5z" />
+                <path
+                  d="M9.979 5.356a.5.5 0 0 0-.968.04L7.92 10.49l-.94-3.135a.5.5 0 0 0-.926-.08L4.69 10H4.5a.5.5 0 0 0 0 1h.5a.5.5 0 0 0 .447-.276l.936-1.873 1.138 3.793a.5.5 0 0 0 .968-.04L9.58 7.51l.94 3.135A.5.5 0 0 0 11 11h.5a.5.5 0 0 0 0-1h-.128z" />
+              </svg>
+            </div>
+            <div class="icon-box-content">
+              <h3 class="card-title py-2">Lab Checkups</h3>
+              <p>Reliable diagnostic and pathology services with accurate reports and professional support for better
+                health monitoring.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 pb-3">
+          <div class="icon-box p-4 bg-light border-radius-10 text-center shadow-sm h-100">
+            <div class="icon-box-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#BF963E"
+                class="bi bi-capsule mt-3 mb-2" viewBox="0 0 16 16">
+                <path
+                  d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429z" />
+              </svg>
+            </div>
+            <div class="icon-box-content">
+              <h3 class="card-title py-2">Pharmaceutical Care</h3>
+              <p>Personalized healthcare assistance, medicine guidance, and customer-focused support dedicated to your
+                well-being.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #fcfdfc 0%, #f2f6f2 50%, #fbfaf4 100%);
+      background-attachment: fixed;
+    }
+
+    #our-services,
+    #our-team,
+    #supporting-doctors,
+    #about-us,
+    #footer {
+      padding-top: 4rem !important;
+      padding-bottom: 4rem !important;
+    }
+
+    @media (max-width: 767px) {
+
+      #our-services,
+      #our-team,
+      #supporting-doctors,
+      #about-us,
+      #footer {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+      }
+    }
+  </style>
+  <section id="our-team" class="padding-large">
+    <div class="container">
+      <div class="row">
+        <div class="display-header mb-5 text-center">
+          <h2 class="display-5 fw-bold text-dark">Our Team</h2>
+          <p class="text-muted fs-5 mx-auto" style="max-width: 600px;">Meet our dedicated specialists providing expert
+            care tailored to your specific health needs.</p>
+        </div>
+
+        <style>
+          .team-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            z-index: 1;
+          }
+
+          .team-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(43, 74, 33, 0.12) !important;
+            border-color: rgba(181, 139, 55, 0.2);
+          }
+
+          .team-card .icon-wrapper {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #f0f7ec 0%, #e1eedc 100%);
+            color: #2B4A21;
+            transition: all 0.4s ease;
+          }
+
+          .team-card:hover .icon-wrapper {
+            background: linear-gradient(135deg, #2B4A21 0%, #1e3317 100%);
+            color: #BF963E;
+            transform: scale(1.1) rotate(5deg);
+          }
+
+          .team-card h4 {
+            color: #2B4A21;
+            transition: color 0.3s ease;
+          }
+
+          .team-card:hover h4 {
+            color: #BF963E;
+          }
+
+          .team-card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+          }
+
+          .team-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #2B4A21, #BF963E);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+          }
+
+          .team-card:hover::before {
+            transform: scaleX(1);
+          }
+        </style>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="team-card h-100 position-relative bg-white overflow-hidden text-center rounded-4 shadow-sm p-4">
+            <div class="icon-wrapper mb-4 d-inline-flex align-items-center justify-content-center rounded-circle">
+              <iconify-icon icon="fa6-solid:hand-holding-droplet" width="36"></iconify-icon>
+            </div>
+            <h4 class="fw-bold mb-3">Derma Doctor</h4>
+            <p class="text-muted mb-0">Advanced skincare solutions for diagnosing and treating conditions of the skin,
+              hair, and nails with personalized care.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="team-card h-100 position-relative bg-white overflow-hidden text-center rounded-4 shadow-sm p-4">
+            <div class="icon-wrapper mb-4 d-inline-flex align-items-center justify-content-center rounded-circle">
+              <iconify-icon icon="fa6-solid:baby" width="36"></iconify-icon>
+            </div>
+            <h4 class="fw-bold mb-3">Pediatric</h4>
+            <p class="text-muted mb-0">Specialized healthcare for infants, children, and adolescents, ensuring healthy
+              growth and development at every stage.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="team-card h-100 position-relative bg-white overflow-hidden text-center rounded-4 shadow-sm p-4">
+            <div class="icon-wrapper mb-4 d-inline-flex align-items-center justify-content-center rounded-circle">
+              <iconify-icon icon="fa6-solid:person-pregnant" width="36"></iconify-icon>
+            </div>
+            <h4 class="fw-bold mb-3">Gynaecologist </h4>
+            <p class="text-muted mb-0">Expert care in women's reproductive health, maternity care, and wellness support
+              throughout all stages of life.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="team-card h-100 position-relative bg-white overflow-hidden text-center rounded-4 shadow-sm p-4">
+            <div class="icon-wrapper mb-4 d-inline-flex align-items-center justify-content-center rounded-circle">
+              <iconify-icon icon="fa6-solid:stethoscope" width="36"></iconify-icon>
+            </div>
+            <h4 class="fw-bold mb-3">General Physician</h4>
+            <p class="text-muted mb-0">Comprehensive medical care for all ages, focusing on prevention, diagnosis, and
+              treatment of everyday conditions.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="supporting-doctors" class="padding-large pt-0">
+    <div class="container">
+      <div class="row">
+        <div class="display-header mb-5 text-center">
+          <h2 class="display-5 fw-bold text-dark">Supporting Doctors</h2>
+          <p class="text-muted fs-5 mx-auto" style="max-width: 600px;">Collaborating with esteemed holistic
+            practitioners to bring you comprehensive healthcare.</p>
+        </div>
+
+        <style>
+          .therapy-item {
+            transition: all 0.3s ease;
+          }
+
+          .therapy-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(43, 74, 33, 0.1) !important;
+          }
+        </style>
+
+        <div class="col-12">
+          <div class="card border-0 shadow-lg w-100"
+            style="border-radius: 24px; overflow: hidden; background: linear-gradient(145deg, #ffffff, #f8faf7);">
+            <div class="row g-0">
+
+              <!-- Brand & Doctor Info -->
+              <div
+                class="col-lg-5 p-5 text-center text-lg-start d-flex flex-column justify-content-center position-relative"
+                style="background: linear-gradient(135deg, #2B4A21 0%, #172a11 100%); color: white;">
+                <iconify-icon icon="mingcute:leaf-fill" width="300" class="position-absolute"
+                  style="color: rgba(255,255,255,0.03); top: -50px; right: -50px; transform: rotate(45deg);"></iconify-icon>
+
+                <div class="mb-4 position-relative z-1">
+                  <iconify-icon icon="mingcute:leaf-fill" width="60" style="color: #BF963E;"></iconify-icon>
+                </div>
+                <h3 class="display-6 fw-bold mb-2 position-relative z-1" style="color: #BF963E;">Abhaya Ayurveda</h3>
+                <h4 class="fs-4 mb-4 text-white-50 position-relative z-1">by Dr. Arjun Nanda</h4>
+                <p class="fs-6 mb-0 text-white-50 position-relative z-1" style="line-height: 1.6;">
+                  Experience the ancient science of healing with personalized Ayurvedic treatments, holistic wellness,
+                  and natural rejuvenation therapies to restore your mind, body, and spirit.
+                </p>
+              </div>
+
+              <!-- Therapies -->
+              <div class="col-lg-7 p-5">
+                <h4 class="fw-bold mb-5 text-center text-lg-start" style="color: #2B4A21;">Featured Ayurvedic Therapies
+                </h4>
+                <div class="row g-4">
+
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-start therapy-item p-3 rounded-4"
+                      style="background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+                      <div class="me-3 mt-1">
+                        <div class="d-flex align-items-center justify-content-center rounded-circle"
+                          style="width: 50px; height: 50px; background: rgba(191, 150, 62, 0.1);">
+                          <iconify-icon icon="solar:spa-bold-duotone" width="28" style="color: #BF963E;"></iconify-icon>
+                        </div>
+                      </div>
+                      <div>
+                        <h5 class="fw-bold mb-1" style="color: #2B4A21;">Panchakarma</h5>
+                        <p class="text-muted small mb-0">Deep body detox and purification program to restore cellular
+                          balance.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-start therapy-item p-3 rounded-4"
+                      style="background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+                      <div class="me-3 mt-1">
+                        <div class="d-flex align-items-center justify-content-center rounded-circle"
+                          style="width: 50px; height: 50px; background: rgba(191, 150, 62, 0.1);">
+                          <iconify-icon icon="solar:hand-stars-bold-duotone" width="28"
+                            style="color: #BF963E;"></iconify-icon>
+                        </div>
+                      </div>
+                      <div>
+                        <h5 class="fw-bold mb-1" style="color: #2B4A21;">Nadi Pariksha</h5>
+                        <p class="text-muted small mb-0">Ancient pulse diagnosis technique for accurate root-cause
+                          analysis.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-start therapy-item p-3 rounded-4"
+                      style="background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+                      <div class="me-3 mt-1">
+                        <div class="d-flex align-items-center justify-content-center rounded-circle"
+                          style="width: 50px; height: 50px; background: rgba(191, 150, 62, 0.1);">
+                          <iconify-icon icon="solar:droplets-bold-duotone" width="28"
+                            style="color: #BF963E;"></iconify-icon>
+                        </div>
+                      </div>
+                      <div>
+                        <h5 class="fw-bold mb-1" style="color: #2B4A21;">Shirodhara</h5>
+                        <p class="text-muted small mb-0">Soothing therapy pouring warm herbal oils for profound stress
+                          relief.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-start therapy-item p-3 rounded-4"
+                      style="background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+                      <div class="me-3 mt-1">
+                        <div class="d-flex align-items-center justify-content-center rounded-circle"
+                          style="width: 50px; height: 50px; background: rgba(191, 150, 62, 0.1);">
+                          <iconify-icon icon="solar:leaf-bold-duotone" width="28"
+                            style="color: #BF963E;"></iconify-icon>
+                        </div>
+                      </div>
+                      <div>
+                        <h5 class="fw-bold mb-1" style="color: #2B4A21;">Herbal Remedies</h5>
+                        <p class="text-muted small mb-0">Customized natural medicine formulations for long-lasting
+                          health.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about-us" class="padding-large">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="counter-info text-center">
+            <div
+              class="counter-number text-primary-500 display-2 fw-semibold d-flex align-items-center justify-content-center">
+              <span class="counter-prefix">+</span>
+              <h5 class="timer display-4 fw-bold m-0" data-to="500" data-speed="2000">500</h5>
+            </div>
+            <p class="counter-description">Happy Customers Served</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="counter-info text-center">
+            <div
+              class="counter-number text-primary-500 display-2 fw-semibold d-flex align-items-center justify-content-center">
+              <span class="counter-prefix">+</span>
+              <h5 class="timer display-4 fw-bold m-0" data-to="15" data-speed="2000">15</h5>
+            </div>
+            <p class="counter-description">Healthcare Categories</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="counter-info text-center">
+            <div
+              class="counter-number text-primary-500 display-2 fw-semibold d-flex align-items-center justify-content-center">
+              <span class="counter-prefix">+</span>
+              <h5 class="timer display-4 fw-bold m-0" data-to="40" data-speed="2000">40</h5>
+            </div>
+            <p class="counter-description">Years of Family Trust and Experience</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="counter-info text-center">
+            <div
+              class="counter-number text-primary-500 display-2 fw-semibold d-flex align-items-center justify-content-center">
+              <h5 class="timer display-4 fw-bold m-0" data-to="100" data-speed="2000">100</h5>
+              <span class="counter-prefix">%</span>
+            </div>
+            <p class="counter-description">Genuine Medicines</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="footer" class="overflow-hidden padding-large pb-0">
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-between">
+        <div class="col-lg-4 col-md-6 col-sm-6 pb-3">
+          <div class="footer-menu">
+            <div class="d-flex align-items-center pb-3">
+              <img src="images/ssb-pharmacy-logo.png" alt="logo" style="max-height: 100px;">
+              <span class="ms-2 fw-bold fs-3" style="color: #2B4A21;">SS<span style="color: #BF963E;">B</span>
+                PHARMACY</span>
+            </div>
+            <p>Dedicated to bringing genuine medicines, trusted healthcare solutions, and caring service closer to every
+              family we serve</p>
+            <div class="contact-item">
+              <p class="d-flex align-items-start">
+                <svg class="location primary-color me-2 flex-shrink-0 mt-1" width="25" height="25">
+                  <use xlink:href="#location"></use>
+                </svg>
+                <span>21, Mahant Road <br> Laxman Chowk, Dehradun</span>
+              </p>
+              <p class="d-flex align-items-center">
+                <svg class="email primary-color me-2 flex-shrink-0" width="25" height="25">
+                  <use xlink:href="#email"></use>
+                </svg>
+                <a href="mailto:">ssbpharmacy2026@gmail.com</a>
+              </p>
+              <p class="d-flex align-items-center">
+                <svg class="phone primary-color me-2 flex-shrink-0" width="25" height="25">
+                  <use xlink:href="#phone"></use>
+                </svg>
+                <a href="tel:+917452020487" class="text-decoration-none text-reset">(+91) 7452020487</a>
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 pb-3">
+          <div class="footer-menu">
+            <h5 class="widget-title fw-semibold">Our Location</h5>
+            <div class="mt-3 rounded overflow-hidden shadow-sm">
+              <iframe
+                src="https://maps.google.com/maps?q=21,+Mahant+Road,+Laxman+Chowk,+Dehradun&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 pb-3">
+          <div class="footer-menu">
+            <h5 class="widget-title fw-semibold">Opening Hours</h5>
+            <table class="schedule">
+              <tr class="d-flex justify-content-between border-bottom py-2">
+                <td>Monday - Saturday</td>
+                <td class="text-primary">10:00 am - 8:00 pm</td>
+              </tr>
+              <tr class="d-flex justify-content-between border-bottom py-2">
+                <td>Sunday</td>
+                <td class="text-primary">10:00 am - 2:00 pm</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="d-md-flex text-center justify-content-between border-top mt-5 py-4">
+        <p>© 2026 SSB PHARMACY - All rights reserved</p>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>
