@@ -151,12 +151,64 @@
 
     <nav id="primary-header" nav class="navbar navbar-expand-lg shadow-none" aria-label="navbar" height="30">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-primary"
+        <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-primary"
           aria-controls="navbar-primary" aria-expanded="false" aria-label="Toggle navigation">
-          <svg class="navbar-icon mt-3 primary-color-500 bg-light" width="50" height="50">
-            <use xlink:href="#navbar-icon"></use>
-          </svg>
+          <span class="menu-lines">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
         </button>
+        <style>
+          .mobile-menu-btn {
+            border: 1.5px solid rgba(43, 74, 33, 0.25) !important;
+            background: rgba(255, 255, 255, 0.55) !important;
+            backdrop-filter: blur(10px) !important;
+            -webkit-backdrop-filter: blur(10px) !important;
+            border-radius: 10px !important;
+            padding: 7px 10px !important;
+            box-shadow: 0 2px 10px rgba(43, 74, 33, 0.1) !important;
+            transition: all 0.25s ease !important;
+            outline: none !important;
+          }
+          .mobile-menu-btn:hover,
+          .mobile-menu-btn:focus {
+            background: rgba(43, 74, 33, 0.12) !important;
+            border-color: rgba(43, 74, 33, 0.45) !important;
+            box-shadow: 0 4px 16px rgba(43, 74, 33, 0.15) !important;
+          }
+          .mobile-menu-btn:focus {
+            box-shadow: 0 0 0 3px rgba(43, 74, 33, 0.15) !important;
+          }
+          .menu-lines {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            width: 20px;
+          }
+          .menu-lines span {
+            display: block;
+            height: 2px;
+            border-radius: 2px;
+            background: #2B4A21;
+            transition: all 0.3s ease;
+          }
+          .menu-lines span:nth-child(1) { width: 20px; }
+          .menu-lines span:nth-child(2) { width: 14px; }
+          .menu-lines span:nth-child(3) { width: 17px; }
+          .mobile-menu-btn[aria-expanded="true"] .menu-lines span:nth-child(1) {
+            transform: translateY(6px) rotate(45deg);
+            width: 20px;
+          }
+          .mobile-menu-btn[aria-expanded="true"] .menu-lines span:nth-child(2) {
+            opacity: 0;
+            transform: scaleX(0);
+          }
+          .mobile-menu-btn[aria-expanded="true"] .menu-lines span:nth-child(3) {
+            transform: translateY(-6px) rotate(-45deg);
+            width: 20px;
+          }
+        </style>
         <div class="header-bottom collapse navbar-collapse bg-light border-radius-10 py-2" id="navbar-primary">
           <ul class="navbar-nav w-100 justify-content-center mb-2 mb-lg-0">
             <li class="nav-item ps-4 pe-4 border-right text-center">
@@ -692,6 +744,22 @@
   <script type="text/javascript" src="js/plugins.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script>
+    // Auto-close mobile navbar when a nav link is clicked
+    document.querySelectorAll('#navbar-primary .nav-link').forEach(function(link) {
+      link.addEventListener('click', function() {
+        var navbarCollapse = document.getElementById('navbar-primary');
+        if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+          var bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+          if (bsCollapse) {
+            bsCollapse.hide();
+          } else {
+            new bootstrap.Collapse(navbarCollapse, { toggle: false }).hide();
+          }
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
