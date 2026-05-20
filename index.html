@@ -118,39 +118,34 @@
   </svg>
 
   <header id="header">
-    <nav class="header-top py-4">
+    <nav class="header-top py-2">
       <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-12 col-md-5 col-lg-4 d-flex justify-content-center justify-content-md-start">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-              <img src="images/ssb-pharmacy-logo.png" class="logo" style="max-height: 80px;">
-              <span class="ms-2 fw-bold fs-3" style="color: #2B4A21;">SS<span style="color: #B58B37;">B</span>
-                PHARMACY</span>
-            </a>
-          </div>
-          <div class="col-12 col-md-7 col-lg-8 mt-3 mt-md-0">
-            <ul
-              class="contact-list d-flex justify-content-center justify-content-md-end align-items-center flex-wrap list-unstyled m-0">
-              <li class="pe-md-4 pe-3 d-flex align-items-center text-dark fw-bold mb-2 mb-md-0 fs-6">
-                <svg class="location primary-color me-2 flex-shrink-0" width="24" height="24">
-                  <use xlink:href="#location"></use>
-                </svg>
-                <div class="text-start">21, Mahant Road <br> Laxman Chowk, Dehradun</div>
-              </li>
-              <li class="d-flex align-items-center text-dark fw-bold mb-2 mb-md-0 fs-6">
-                <svg class="phone primary-color me-2 flex-shrink-0" width="24" height="24">
-                  <use xlink:href="#phone"></use>
-                </svg>
-                <a href="tel:+917452020847" class="text-decoration-none text-dark">(+91) 7452020847</a>
-              </li>
-            </ul>
-          </div>
+        <div class="d-flex justify-content-center justify-content-md-end align-items-center">
+          <ul class="contact-list d-flex align-items-center flex-wrap list-unstyled m-0">
+            <li class="pe-md-4 pe-3 d-flex align-items-center text-white fw-bold mb-0 fs-6">
+              <svg class="location primary-color me-2 flex-shrink-0" width="20" height="20">
+                <use xlink:href="#location"></use>
+              </svg>
+              <div class="text-start">21, Mahant Road, Laxman Chowk, Dehradun</div>
+            </li>
+            <li class="d-flex align-items-center text-white fw-bold mb-0 fs-6">
+              <svg class="phone primary-color me-2 flex-shrink-0" width="20" height="20">
+                <use xlink:href="#phone"></use>
+              </svg>
+              <a href="tel:+917452020847" class="text-decoration-none text-white">(+91) 7452020847</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
-    <nav id="primary-header" nav class="navbar navbar-expand-lg shadow-none" aria-label="navbar" height="30">
+    <nav id="primary-header" class="navbar navbar-expand-lg shadow-none" aria-label="navbar" height="30">
       <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="images/ssb-pharmacy-logo.png" class="logo" style="max-height: 60px;">
+          <span class="ms-2 fw-bold fs-3 brand-text-title">SS<span>B</span> PHARMACY</span>
+        </a>
+
         <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbar-primary" aria-controls="navbar-primary" aria-expanded="false"
           aria-label="Toggle navigation">
@@ -161,6 +156,141 @@
           </span>
         </button>
         <style>
+          /* Premium Sticky Header & Glassmorphism */
+          #header {
+            position: relative;
+            z-index: 1000;
+          }
+
+          #primary-header {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 2px solid rgba(43, 74, 33, 0.08);
+            box-shadow: 0 4px 30px rgba(43, 74, 33, 0.03);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            padding: 0.75rem 0;
+          }
+
+          /* Shrink navigation on scroll */
+          #primary-header.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 0.5rem 0;
+            box-shadow: 0 10px 30px rgba(43, 74, 33, 0.08);
+            border-bottom-color: rgba(181, 139, 55, 0.25);
+          }
+
+          #primary-header.scrolled .logo {
+            max-height: 48px !important;
+          }
+
+          #primary-header.scrolled .brand-text-title {
+            font-size: 1.5rem !important;
+          }
+
+          /* Attractive Top Bar Color & Styles */
+          .header-top {
+            background: linear-gradient(135deg, #1e3317 0%, #2B4A21 50%, #1e3317 100%);
+            border-bottom: 3px solid #BF963E;
+            position: relative;
+            overflow: hidden;
+            box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.15);
+          }
+
+          /* Flashy light sweep effect on top bar */
+          .header-top::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -50%;
+            width: 30%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0) 100%);
+            transform: skewX(-25deg);
+            animation: light-sweep 6s infinite ease-in-out;
+          }
+
+          @keyframes light-sweep {
+            0% {
+              left: -50%;
+            }
+
+            30% {
+              left: 150%;
+            }
+
+            100% {
+              left: 150%;
+            }
+          }
+
+          /* Logo Hover and Animation */
+          .navbar-brand {
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          }
+
+          .navbar-brand:hover {
+            transform: scale(1.03);
+          }
+
+          .navbar-brand .logo {
+            transition: max-height 0.3s ease, filter 0.4s ease, transform 0.4s ease;
+          }
+
+          .navbar-brand:hover .logo {
+            filter: drop-shadow(0 0 8px rgba(43, 74, 33, 0.25));
+            transform: rotate(-3deg);
+          }
+
+          .navbar-brand span {
+            color: #2B4A21 !important;
+            transition: color 0.3s ease, font-size 0.3s ease;
+          }
+
+          .navbar-brand span span {
+            color: #BF963E !important;
+            transition: color 0.3s ease;
+          }
+
+          /* Flashy Logo Color-Swap Hover Effect */
+          .navbar-brand:hover span {
+            color: #BF963E !important;
+          }
+
+          .navbar-brand:hover span span {
+            color: #2B4A21 !important;
+          }
+
+          /* Top Bar Contact Info Updates */
+          .header-top .contact-list li {
+            color: rgba(255, 255, 255, 0.9) !important;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+          }
+
+          .header-top .contact-list li:hover {
+            transform: translateY(-2px);
+          }
+
+          .header-top .contact-list a {
+            color: #ffffff !important;
+            transition: color 0.3s ease;
+          }
+
+          .header-top .contact-list a:hover {
+            color: #D4A843 !important;
+          }
+
+          .header-top svg.location,
+          .header-top svg.phone {
+            color: #D4A843 !important;
+            filter: drop-shadow(0 0 2px rgba(212, 168, 67, 0.3));
+          }
+
+          /* Mobile Menu Toggle Button Styles */
           .mobile-menu-btn {
             border: 1.5px solid rgba(43, 74, 33, 0.25) !important;
             background: rgba(255, 255, 255, 0.55) !important;
@@ -225,16 +355,150 @@
             transform: translateY(-6px) rotate(-45deg);
             width: 20px;
           }
+
+          /* Nav Links Underline Sliding Effect */
+          .navbar-nav .nav-item {
+            position: relative;
+            margin: 0 0.5rem;
+          }
+
+          .navbar-nav a.nav-link {
+            font-weight: 700 !important;
+            font-size: 0.92rem !important;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #4C5354 !important;
+            padding: 0.6rem 0.8rem !important;
+            position: relative;
+            transition: color 0.3s ease, transform 0.2s ease;
+          }
+
+          .navbar-nav a.nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #2B4A21, #BF963E);
+            border-radius: 2px;
+            transition: width 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), left 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          }
+
+          .navbar-nav a.nav-link:hover::after,
+          .navbar-nav a.nav-link.active::after {
+            width: 100%;
+            left: 0;
+          }
+
+          .navbar-nav a.nav-link:hover {
+            color: #2B4A21 !important;
+            transform: translateY(-1px);
+          }
+
+          .navbar-nav a.nav-link.active {
+            color: #2B4A21 !important;
+            font-weight: 800 !important;
+          }
+
+          /* Header Bottom Container overrides */
+          .header-bottom.navbar-collapse {
+            box-shadow: none !important;
+            background: transparent !important;
+            border-radius: 0 !important;
+          }
+
+          /* Mobile Responsive Upgrade */
+          @media (max-width: 991px) {
+            #primary-header {
+              padding: 0.5rem 0;
+            }
+
+            .header-bottom.collapse.navbar-collapse {
+              background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(246, 250, 245, 0.98) 100%) !important;
+              border: 2px solid rgba(43, 74, 33, 0.15) !important;
+              box-shadow: 0 15px 35px rgba(43, 74, 33, 0.12) !important;
+              backdrop-filter: blur(20px) !important;
+              -webkit-backdrop-filter: blur(20px) !important;
+              border-radius: 16px !important;
+              padding: 1.5rem 1rem !important;
+              margin-top: 12px;
+              transition: all 0.4s ease;
+            }
+
+            .navbar-nav .nav-item {
+              border-bottom: 1px solid rgba(43, 74, 33, 0.06);
+              margin: 0.25rem 0;
+              width: 100%;
+              text-align: center;
+              border-right: none !important;
+              /* Remove right border separators on mobile */
+            }
+
+            .navbar-nav .nav-item:last-child {
+              border-bottom: none;
+            }
+
+            .navbar-nav a.nav-link {
+              font-size: 1.1rem !important;
+              padding: 0.8rem 1rem !important;
+              display: block;
+              border-radius: 8px;
+              transition: background 0.3s ease, color 0.3s ease;
+            }
+
+            .navbar-nav a.nav-link::after {
+              display: none;
+              /* disable horizontal line indicator on mobile */
+            }
+
+            .navbar-nav a.nav-link:hover,
+            .navbar-nav a.nav-link.active {
+              background: rgba(43, 74, 33, 0.08);
+              color: #2B4A21 !important;
+            }
+          }
+
+          @media (max-width: 575px) {
+            .header-top {
+              padding-top: 1rem !important;
+              padding-bottom: 1rem !important;
+            }
+
+            .navbar-brand {
+              justify-content: flex-start;
+            }
+
+            .navbar-brand span {
+              font-size: 1.35rem !important;
+            }
+
+            .logo {
+              max-height: 50px !important;
+            }
+
+            .contact-list {
+              flex-direction: column;
+              gap: 0.5rem;
+              margin-top: 0rem !important;
+            }
+
+            .contact-list li {
+              padding: 0 !important;
+              margin: 0 !important;
+              font-size: 0.85rem !important;
+            }
+          }
         </style>
         <div class="header-bottom collapse navbar-collapse bg-light border-radius-10 py-2" id="navbar-primary">
-          <ul class="navbar-nav w-100 justify-content-center mb-2 mb-lg-0">
-            <li class="nav-item ps-4 pe-4 border-right text-center">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item ps-4 pe-4 text-center">
               <a class="nav-link text-dark active p-0 mt-3 mt-lg-0" aria-current="page" href="#intro">Home</a>
             </li>
-            <li class="nav-item ps-4 pe-4 border-right text-center">
+            <li class="nav-item ps-4 pe-4 text-center">
               <a class="nav-link text-dark p-0" href="#our-services">Services</a>
             </li>
-            <li class="nav-item ps-4 pe-4 border-right text-center">
+            <li class="nav-item ps-4 pe-4 text-center">
               <a class="nav-link text-dark p-0" href="#our-team">Team</a>
             </li>
           </ul>
@@ -321,6 +585,22 @@
           <div class="icon-box p-4 bg-light border-radius-10 text-center shadow-sm h-100">
             <div class="icon-box-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#BF963E"
+                class="bi bi-capsule mt-3 mb-2" viewBox="0 0 16 16">
+                <path
+                  d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429z" />
+              </svg>
+            </div>
+            <div class="icon-box-content">
+              <h3 class="card-title py-2">Pharmaceutical Care</h3>
+              <p>Personalized healthcare assistance, medicine guidance, and customer-focused support dedicated to your
+                well-being.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 pb-3">
+          <div class="icon-box p-4 bg-light border-radius-10 text-center shadow-sm h-100">
+            <div class="icon-box-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#BF963E"
                 class="bi bi-clipboard2-pulse mt-3 mb-2" viewBox="0 0 16 16">
                 <path
                   d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5z" />
@@ -334,22 +614,6 @@
               <h3 class="card-title py-2">Lab Checkups</h3>
               <p>Reliable diagnostic and pathology services with accurate reports and professional support for better
                 health monitoring.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 pb-3">
-          <div class="icon-box p-4 bg-light border-radius-10 text-center shadow-sm h-100">
-            <div class="icon-box-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#BF963E"
-                class="bi bi-capsule mt-3 mb-2" viewBox="0 0 16 16">
-                <path
-                  d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429z" />
-              </svg>
-            </div>
-            <div class="icon-box-content">
-              <h3 class="card-title py-2">Pharmaceutical Care</h3>
-              <p>Personalized healthcare assistance, medicine guidance, and customer-focused support dedicated to your
-                well-being.</p>
             </div>
           </div>
         </div>
@@ -775,6 +1039,18 @@
           }
         }
       });
+    });
+
+    // Sticky Header scroll effect
+    window.addEventListener('scroll', function () {
+      var primaryHeader = document.getElementById('primary-header');
+      if (primaryHeader) {
+        if (window.scrollY > 50) {
+          primaryHeader.classList.add('scrolled');
+        } else {
+          primaryHeader.classList.remove('scrolled');
+        }
+      }
     });
   </script>
 </body>
